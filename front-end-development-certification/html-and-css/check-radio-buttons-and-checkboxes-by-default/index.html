@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+
+<!-- 
+	HTML file
+
+	Written by: Stephen Jonker
+	Written on: Monday 23 Oct 2017 
+	Copyright (c) 2017 - Stephen Jonker - www.stephenjonker.com
+	
+	Project: freeCodeCamp - Front End Developer Certification - HTML and CSS
+	
+-->
+
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>
+		freeCodeCamp - Sample Code 
+	</title>
+
+	<!-- import Google fonts --> 
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+	<main>
+		<!-- check radio buttons and checkboxes by default --> 
+
+		<!-- set the first radio button and first checkbox to be checked   -->	
+		<!-- using the checked attribute -->
+
+		<style>
+			.red-text {
+				color: red;
+			}
+
+			.smaller-image {
+				width: 100px;
+			}
+
+			.thick-green-border {
+				border: 10px solid green;
+				border-radius: 50%;
+			}	
+
+			h2 {
+				font-family: lobster, monospace;
+			}
+
+			p {
+				font-size: 16px;
+				font-family: monospace;
+			}
+		</style>
+
+
+		<h2 class="red-text">CatPhotoApp</h2>
+		<a href="#">
+			<img class="smaller-image thick-green-border" 
+				src="https://bit.ly/fcc-running-cats" 
+				alt="Three kittens running towards the camera. ">
+		</a>
+
+		<p>View more 
+		<a href="#">cat photos</a>
+		</p>
+
+		<ul>
+			<li>Milk</li>
+			<li>Cat food</li>
+			<li>Cat Nip</li> 
+		</ul>
+		<p>Top 3 things cats hate:</p>
+		<ol>
+			<li>Dogs</li>
+			<li>Water</li>
+			<li>Playing fetch</li> 
+		</ol>
+		<form action="/submit-cat-photo">
+			<input type="text" placeholder="cat photo URL" required>
+			<button type="submit">Submit</button> 
+			<p>
+				<label><input type="radio" name="indoor-outdoor" checked>Indoor</label>
+    				<label><input type="radio" name="indoor-outdoor">Outdoor</label>
+  			</p>
+			<p>
+				<label><input type="checkbox" name="personality" checked>Loving</label>
+				<label><input type="checkbox" name="personality">Kind</label>
+				<label><input type="checkbox" name="personality">Happy</label>
+  			</p>
+			
+		</form>
+	</main>
+</body>
+
+</html>
